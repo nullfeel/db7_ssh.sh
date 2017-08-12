@@ -1,59 +1,14 @@
 #!/bin/bash
 #
-# Script Copyright www.fornesia.com
+# Script Copyright Bima-net
 # ==========================
 # 
-
-if [[ $USER != 'root' ]]; then
-	echo "Maaf, Anda harus menjalankan ini sebagai root"
-	exit
-fi
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-ether=`ifconfig | cut -c 1-8 | sort | uniq -u | grep venet0 | grep -v venet0:`
-if [[ $ether = "" ]]; then
-        ether=eth0
-fi
-
-vps="FNS";
-
-if [[ $vps = "FNS" ]]; then
-	source="https://nk86.000webhostapp.com"
-else
-	source="https://freessh.me"
-fi
-
-# go to root
-cd
-
-# check registered ip
-wget -q -O /etc/imd https://nk86.000webhostapp.com/daftarip.txt
-wget -q -O daftarip https://nk86.000webhostapp.com/daftarip.txt
-if ! grep -w -q $MYIP daftarip; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	if [[ $vps = "FNS" ]]; then
-		echo "Hubungi: Bima (fb.com/bima.mrth)"
-	else
-		echo "Hubungi: FreeSSH.me (https://freessh.me/page/contact)"
-	fi
-	rm -f /root/daftarip
-	exit
-fi
-
-    NORMAL=`echo "\033[m"`
-    MENU=`echo "\033[36m"` #Blue
-    NUMBER=`echo "\033[33m"` #yellow
-    FGRED=`echo "\033[41m"`
-    RED_TEXT=`echo "\033[31m"`
-	LGREEN=`echo "\033[0m\033[1;32m"`
-    ENTER_LINE=`echo "\033[33m"`
-	LRED=`echo "\033[0m\033[1;31m"`
-	BLUE=`echo "\033[0m\033[1;36m"`
-
 
 # go to root
 cd

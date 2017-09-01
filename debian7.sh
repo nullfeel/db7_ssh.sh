@@ -56,7 +56,7 @@ apt-get update
 apt-get install neofetch
 
 echo "clear" >> .bashrc
-echo 'echo -e "cowsay -f eyes "B-Net"| lolcat"' >> .bashrc
+echo 'echo -e "cowsay -f eyes "B-Net"|lolcat' >> .bashrc
 echo 'echo -e "Ketik menu untuk menampilkan daftar perintah| lolcat"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 

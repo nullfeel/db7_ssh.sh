@@ -61,7 +61,7 @@ apt-get update
 apt-get install neofetch
 
 echo "clear" >> .bashrc
-echo 'figlet"         WELCOME"| lolcat' >> .bashrc
+echo 'figlet "              WELCOME"| lolcat' >> .bashrc
 echo 'echo -e Ketik menu untuk menampilkan daftar perintah| lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 

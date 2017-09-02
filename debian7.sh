@@ -14,10 +14,15 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 cd
 
 #install dekor
+apt-get update
+apt-get upgrade
 sudo apt-get install ruby
 gem install lolcat
 apt-get install figlet
 apt-get install fortune cowsay
+
+#go to root
+cd
 
 # disable ipv6
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
@@ -202,7 +207,7 @@ echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Original Script by Fornesia, Rzengineer & Fawzya"  | tee -a log-install.txt
-echo "Modified by Bustami Arifin"  | tee -a log-install.txt
+echo "Modified by Bima"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Log Instalasi --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt

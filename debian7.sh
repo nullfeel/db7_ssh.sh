@@ -13,14 +13,14 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 # go to root
 cd
 
+#install cosway dan figlet
+apt-get install fortune cowsay
+apt-get install figlet
+
 #install dekor
 apt-get update
 sudo apt-get install ruby
 gem install lolcat
-
-#install cosway dan figlet
-apt-get install fortune cowsay
-apt-get install figlet
 
 #go to root
 cd
@@ -62,7 +62,7 @@ apt-get update
 apt-get install neofetch
 
 echo "clear" >> .bashrc
-echo 'cowsay -f eyes "B-Net"|lolcat' >> .bashrc
+cowsay -f eyes "B-Net" |lolcat >> .bashrc
 echo 'Ketik menu untuk menampilkan daftar perintah| lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 

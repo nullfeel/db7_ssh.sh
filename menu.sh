@@ -3,7 +3,7 @@
 
 echo -e "             __________________________________________________"| lolcat
 echo -e "            |                                                  |"| lolcat
-echo -e "            |          SELAMAT DATANG DI VPS $HOSTNAME             |"| lolcat
+echo -e "            |          SELAMAT DATANG DI VPS $HOSTNAME         |"| lolcat
 echo -e "            |  Admin :                  Admin : Bima S.        |"| lolcat
 echo -e "            |  Admin :                  Admin :                |"| lolcat
 echo -e "            |  Admin :                  Admin :                |"| lolcat

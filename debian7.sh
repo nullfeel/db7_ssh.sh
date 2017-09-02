@@ -14,7 +14,6 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 cd
 
 #install cosway dan figlet
-apt-get install fortune cowsay
 apt-get install figlet
 
 #install dekor
@@ -62,8 +61,8 @@ apt-get update
 apt-get install neofetch
 
 echo "clear" >> .bashrc
-cowsay -f eyes "B-Net" |lolcat >> .bashrc
-echo 'Ketik menu untuk menampilkan daftar perintah| lolcat' >> .bashrc
+echo 'figlet"         WELCOME"| lolcat' >> .bashrc
+echo 'echo -e Ketik menu untuk menampilkan daftar perintah| lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver

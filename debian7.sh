@@ -15,7 +15,6 @@ cd
 
 #install dekor
 apt-get update
-apt-get upgrade
 sudo apt-get install ruby
 gem install lolcat
 apt-get install figlet
@@ -61,8 +60,8 @@ apt-get update
 apt-get install neofetch
 
 echo "clear" >> .bashrc
-echo 'echo -e "cowsay -f eyes "B-Net"|lolcat' >> .bashrc
-echo 'echo -e "Ketik menu untuk menampilkan daftar perintah| lolcat"' >> .bashrc
+echo "cowsay -f eyes "B-Net"|lolcat" >> .bashrc
+echo 'Ketik menu untuk menampilkan daftar perintah| lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -71,7 +70,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "http://fira.cf/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by Bustami Arifin</pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by Bima</pre>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "http://fira.cf/vps.conf"
 service nginx restart
 
